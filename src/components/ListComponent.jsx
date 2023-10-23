@@ -32,7 +32,7 @@ export function ListComponent() {
   return (
     <>
       <FormComponent onSubmit={addTasks}/>
-      <div className="to-do-list-container">
+      <article className="to-do-list-container">
         {
             tasks.map((tasks) =>
             <ToDoComponent 
@@ -44,7 +44,7 @@ export function ListComponent() {
             completeTask={completeTask}/>
             )
         }
-      </div>
+      </article>
     </>
   );
 }
